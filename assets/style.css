@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(227, 245, 185);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(13, 13, 80);
+    padding: 10px 30px 10px 30px;
+
+}
+
+.challange {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.challange h1 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(58, 20, 94);
+}
+
+.challange p {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(30, 53, 7);
+}
+
+.challange button {
+    background-color: rgb(73, 133, 13);
+    font-size: 20px;
+}
+
+.challange button:hover {
+    background-color: chartreuse;
+}
