@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav>
-        <a href="" id="high-score">View High Score</a>
+        <a href="#highscore" id="high-score">View High Score</a>
         <div class= "container" id="display">Time:1:00</div>
     </nav>
     <div id="challange" class = "challange">
@@ -93,18 +93,37 @@
             </div>
             <div class="ans4" id="ans4">
                 <button id="ans4d">4. Console.log</button>
+            </div>
+        </div>    
+    </div>
+    
+    <div id="score-container" class="hide">
+        <div id="score">
+            <h2>ALL DONE!</h2>
+            <p>Your final score is </p>
+            <div id="" class="input-box">
+                <input type="text" placeholder="Your Initials" name="name" id="name" class="input" />  
+                <div></div>
+                <div id="submit-btn" class="submit-btn">
+                    <button id="submit-btn" class="submit">
+                        Submit
+                    </button>
+                </div> 
+            </div>
         </div>
     </div>
-
-    <div id="score" class="score">
-        <h2>ALL DONE!</h2>
-        Your final score is   
-        <div id="submit-btn" class="submit-btn">
-            <button id="submit-btn">Submit</button>
+    
+    <div id="highscore-container" class="highscore-container">
+        <div id="highscore">
+            <h2>High Scores</h2> 
+        </div>
+           
+        <div id="highscore-btn" class="highscore1">
+            <button id="goback-btn" class="highscore-btn">Go Back</button>
+            <button id="clear-btn" class="highscore-btn">Clear High Score</button>
         </div>
     </div>
         
-    
-     <script type="text/javascript" src="assets/script.js"></script>  
+    <script type="text/javascript" src="assets/script.js"></script>  
 </body>
 </html>
