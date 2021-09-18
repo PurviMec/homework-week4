@@ -33,8 +33,47 @@ nav {
 .challange button {
     background-color: rgb(73, 133, 13);
     font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
 }
 
 .challange button:hover {
     background-color: chartreuse;
+    transform: scale(1.05);
+    box-shadow: 0 0.4rem 0 rgba(2, 22, 46, 0.6);
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.hide {
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(58, 20, 94);
+}
+
+.hide button {
+    background-color: rgb(73, 133, 13);
+    font-size: 35px;
+    text-align: left;
+    border-radius: 4px;
+    font-weight: bolder; 
+    width: 500px; 
+    padding: 10px 10px 10px 10px;
+
+}
+
+.hide button:hover {
+    background-color: chartreuse;
+    transform: scale(1.05);
+    box-shadow: 0 0.4rem 0 rgba(2, 23, 49, 0.6);
+    cursor: pointer;
+}
+
+.score {
+    display: none;
 }

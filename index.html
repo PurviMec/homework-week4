@@ -9,20 +9,102 @@
 </head>
 <body>
     <nav>
-        <a href="">View High Score</a>
+        <a href="" id="high-score">View High Score</a>
         <div class= "container" id="display">Time:1:00</div>
     </nav>
-    <div class = "challange">
+    <div id="challange" class = "challange">
         <h1>Coding Quiz Challange</h1>
         <p>
             Try to answer following code-related questions within the timw limit. </br>
             Keep in mind that incorrect answer will penalize your score/time</br>
             by ten seconds!
         </p>
-        <div class ="start-btn">
-            <button>Start Quiz</button>
+        <div class ="start-btn" id="start-btn">
+            <button id="onClick">
+                Start Quiz
+            </button>
+        </div>
+    </div>    
+    <div id="question-container" class="hide">
+        <div id="que1">
+            <h2>QUESTION 1: Commonly used data types Do not Include:</h2>
+            <div class="ans1" id="ans1">
+                <button id="ans1a">1. String</button>
+            </div>
+            <div class="ans1" id="ans1">
+                <button id="ans1b">2. Boolean</button>
+            </div>
+            <div class="ans1" id="ans1">
+                <button id="ans1c">3. Alert</button>
+            </div>
+            <div class="ans1" id="ans1">
+                <button id="ans1d">4. Numbers</button>
+            </div>
         </div>
     </div>
+
+    <div id="question-container2" class="hide">
+        <div id="que2">
+            <h2>QUESTION 2: Arrays in JavaScript can be used to store______.</h2>
+            <div class="ans2" id="ans2">
+                <button id="ans2a">1. Number and Strings</button>
+            </div>
+            <div class="ans2" id="ans2">
+                <button id="ans2b">2. Other Arrays</button>
+            </div>
+            <div class="ans2" id="ans2">
+                <button id="ans2c">3. Booleans</button>
+            </div>
+            <div class="ans2" id="ans2">
+                <button id="ans2d">4. All of the above</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="question-container3" class="hide">
+        <div id="que3">
+            <h2>QUESTION 3: String values must be enclosed within _____ when</br>being assigned to variables.</h2>
+            <div class="ans3" id="ans3">
+                <button id="ans3a">1. Commas</button>
+            </div>
+            <div class="ans3" id="ans3">
+                <button id="ans3b">2. Curly Brackets</button>
+            </div>
+            <div class="ans3" id="ans3">
+                <button id="ans3c">3. Quotes</button>
+            </div>
+            <div class="ans3" id="ans3">
+                <button id="ans3d">4. Parenthesis</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="question-container4" class="hide">
+        <div id="que4">
+            <h2>QUESTION 4: A very useful tool used during development and </br>debugging for printing content to the</br>debugger is:</h2>
+            <div class="ans4" id="ans4">
+                <button id="ans4a">1. JavaScript</button>
+            </div>
+            <div class="ans4" id="ans4">
+                <button id="ans4b">2. Terminal/Bash</button>
+            </div>
+            <div class="ans4" id="ans4">
+                <button id="ans4c">3. For Loops</button>
+            </div>
+            <div class="ans4" id="ans4">
+                <button id="ans4d">4. Console.log</button>
+        </div>
+    </div>
+
+    <div id="score" class="score">
+        <h2>ALL DONE!</h2>
+        Your final score is   
+        <div id="submit-btn" class="submit-btn">
+            <button id="submit-btn">Submit</button>
+        </div>
+    </div>
+        
+    
      <script type="text/javascript" src="assets/script.js"></script>  
 </body>
 </html>
