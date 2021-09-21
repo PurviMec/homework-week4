@@ -13,11 +13,10 @@ let time = startingMinutes * 60;
 
 let numCorrect = 0;
 
-let correctAnswer1 = document.getElementById('ans1c')
+
 
 //start countdown and jump to que 1 by clicking start button
 var startGame = function(){
-    console.log(startGame);
     setInterval(startCountdown, 1000);
 
     function startCountdown() {
@@ -28,38 +27,38 @@ var startGame = function(){
 
     document.getElementById("display").innerHTML = `Time: ${seconds}`;
     time--;
+    if (time < 0){
+        window.clearInterval(update); 
+    }
     }
 
     document.getElementById('challange').style.display = "none";
     questionContainerEl.style.display = "block";
-
-    
 };
 
 
 function selectAnswer(){
+    console.log(selectAnswer);
     questionContainerEl.style.display = "none"; 
     questionContainer2El.style.display = "block";
-    
-    var correct1 = document.getElementById("ans1c")
-    var wrong1 = document.getElementById('ans1a', 'ans1b', 'ans1d')
+
+        
 
 
-        if (correct1.clicked === true){
-            numCorrect +=5;
-        }
-        else{
-            time -= 5;
-        }
+        
+        
+
+        
+        
         
 }
-
-
+       
 
 function selectAnswer2(){
     questionContainer2El.style.display = "none"; 
     questionContainer3El.style.display = "block";
-
+    
+    
     
 }
 
@@ -78,11 +77,12 @@ function selectAnswer4(){
 function score(){
     scoreContainerEl.style.display = "none";
     highScoreContainerEl.style.display = "block";
-
+    const submitEl = getElementById('submit-btn');
+    
 }
 
 function highScore(){
-
+    
 }
 
 
