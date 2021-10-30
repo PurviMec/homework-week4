@@ -48,10 +48,8 @@ nav {
     display: none;
 }
 
-
 .hide {
     font-size: 40px;
-    justify-content: center;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(58, 20, 94);
@@ -63,7 +61,7 @@ nav {
     text-align: left;
     border-radius: 4px;
     font-weight: bolder; 
-    width: 500px; 
+    width: 1000px; 
     padding: 10px 10px 10px 10px;
 
 }
@@ -75,14 +73,11 @@ nav {
     cursor: pointer;
 }
 
-.input-box {
-    padding: auto;
-}
-
 .hide .input{
     font-size: 60px;
     padding: 5px;
     text-align: center;
+    margin: 20px;
 }
 
 .hide .submit {
@@ -109,7 +104,12 @@ nav {
     font-weight: bolder; 
     width: 300px; 
     padding: 10px 10px 10px 10px;
+}
 
+.data{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 25px;
 }
 
 .highscore1 {

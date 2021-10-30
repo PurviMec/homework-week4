@@ -36,7 +36,9 @@ var startGame = function(){
     document.getElementById("display").innerHTML = `Time: ${seconds}`;
     time--;
     if (time < 0){
-        window.clearInterval(update); 
+        clearInterval(); 
+    }else{
+        return false;
     }
     }
 
@@ -47,7 +49,8 @@ var startGame = function(){
 
 var generatePage1 = function(){
     let questionContainerEl = document.getElementById('question-container')
-    var que1El = document.createElement('div')
+    var que1El = document.createElement('div');
+    que1El.addClass = 'class';
     
     var queEl = document.createElement('h2');
     queEl.textContent = "QUESTION 1: Commonly used data types Do not Include:";
