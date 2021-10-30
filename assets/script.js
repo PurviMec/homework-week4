@@ -28,18 +28,13 @@ var startGame = function(){
     setInterval(startCountdown, 1000);
 
     function startCountdown() {
-    let minutes = Math.floor(time / 60);
-    let seconds = time % 60;
+        let minutes = Math.floor(time / 60);
+        let seconds = time % 60;
 
-    seconds = seconds < 10 ? '0' + seconds : seconds;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
 
-    document.getElementById("display").innerHTML = `Time: ${seconds}`;
-    time--;
-    if (time < 0){
-        clearInterval(); 
-    }else{
-        return false;
-    }
+        document.getElementById("display").innerHTML = `Time: ${seconds}`;
+        time--;
     }
 
     document.getElementById('challange').style.display = "none";
