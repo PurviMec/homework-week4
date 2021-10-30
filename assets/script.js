@@ -11,8 +11,6 @@ const highScoreContainerEl = document.getElementById('highscore-container')
 let startingMinutes = 1;
 let time = startingMinutes * 60;
 
-let numCorrect = 0;
-
 let score = 0;
 
 let highScoreBtnEl = document.getElementById('high-score');
@@ -26,7 +24,7 @@ let highScoreBtnEl = document.getElementById('high-score');
 //start countdown and jump to que 1 by clicking start button
 var startGame = function(){
     setInterval(startCountdown, 1000);
-
+   
     function startCountdown() {
         let minutes = Math.floor(time / 60);
         let seconds = time % 60;
@@ -35,6 +33,10 @@ var startGame = function(){
 
         document.getElementById("display").innerHTML = `Time: ${seconds}`;
         time--;
+
+        if (-- time < 0) {
+            clearInterval();
+          }
     }
 
     document.getElementById('challange').style.display = "none";
